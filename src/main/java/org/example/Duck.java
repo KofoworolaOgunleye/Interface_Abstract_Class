@@ -8,5 +8,6 @@ public class Duck extends Bird implements Swimmable{
 
     @Override
     public void fly() {
+        System.out.println("Duck is flying.");
     }
 }
