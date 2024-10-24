@@ -11,5 +11,12 @@ public abstract class Environment<T> { //lets the class work with different type
     public void addTraffic(T traffic) {
         this.traffic.add(traffic);
     }
+    public void checkVehicles(){
+        for (T vehicle:traffic){
+            if (vehicle instanceof Vehicle){
+                ((Vehicle) vehicle).move();
+            }
+        }
+    }
 
 }
